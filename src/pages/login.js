@@ -34,7 +34,7 @@ const Login = () => {
       // jika gagal, tampilkan alert 'Login Gagal'
       
       try{
-        const response = await axios.post('http://localhost:3000/login', {
+        const response = await axios.post('https://modul17mrezah-production.up.railway.app/login', {
           email: data.get('email'),
           password: data.get('password')
         })
