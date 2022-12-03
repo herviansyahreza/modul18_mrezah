@@ -81,7 +81,7 @@ const Profile = () => {
         // 2. Hit endpoint logout dengan body jwt yang didapat dari localstorage
         //   dan setelah berhasil, beri alert sukses
         await axios.post(`${process.env.REACT_APP_BACKEND_URL}/logout`, {
-            jwt: localStorage.getItem('token')
+            token: localStorage.getItem('token')
         })
         .then((res) => {
             alert('Logout Success');
