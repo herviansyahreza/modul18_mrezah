@@ -33,7 +33,7 @@ const Register = () => {
     // jika gagal, tampilkan alert 'Register Gagal'
     
     try {
-      const response = await axios.post('https://modul17mrezah-production.up.railway.app/register', {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, {
         username: data.get('username'),
         email: data.get('email'),
         password: data.get('password')
