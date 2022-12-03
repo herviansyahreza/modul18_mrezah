@@ -80,7 +80,7 @@ const Profile = () => {
 
         // 2. Hit endpoint logout dengan body jwt yang didapat dari localstorage
         //   dan setelah berhasil, beri alert sukses
-        await axios.post('http://localhost:3000/logout', {
+        await axios.post('https://modul17mrezah-production.up.railway.app/logout', {
             jwt: localStorage.getItem('token')
         })
         .then((res) => {
